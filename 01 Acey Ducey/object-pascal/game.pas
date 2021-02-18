@@ -27,7 +27,7 @@ type
     function TryAgain: Boolean;
   protected
   public
-    constructor Create(const AStash: Integer);
+    constructor Create;
     destructor Destroy; override;
 
     procedure Run;
@@ -83,9 +83,8 @@ begin
   Result:= (LowerCase(answer)='yes') or (LowerCase(answer)='y');
 end;
 
-constructor TGame.Create(const AStash: Integer);
+constructor TGame.Create;
 begin
-  FStash:= AStash;
   FDeck:= TDeck.Create;
 end;
 
@@ -101,6 +100,7 @@ begin
   ClrScr;
   PrintGreeting;
   repeat
+    FStash:= 100;
     repeat
       PrintBalance;
       FDeck.DrawCards;

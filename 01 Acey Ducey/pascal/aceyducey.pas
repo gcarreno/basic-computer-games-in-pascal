@@ -47,7 +47,7 @@ begin
   end;
   if ACard = 12 then
   begin
-    Write('QUEN');
+    Write('QUEEN');
   end;
   if ACard = 13 then
   begin
@@ -121,8 +121,8 @@ begin
   Randomize;
   ClrScr;
   PrintGreeting;
-  Stash:= 100;
   repeat
+    Stash:= 100;
     repeat
       PrintBalance;
       DrawDealerCards;

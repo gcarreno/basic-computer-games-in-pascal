@@ -96,10 +96,10 @@ end;
 
 procedure TGame.Run;
 begin
-  Randomize;
   ClrScr;
   PrintGreeting;
   repeat
+    Randomize;
     FStash:= 100;
     repeat
       PrintBalance;

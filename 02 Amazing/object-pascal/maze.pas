@@ -244,8 +244,8 @@ var
   indexL: Integer;
 begin
 
-  DebugVisited;
-  DebugWalls;
+  //DebugVisited;
+  //DebugWalls;
 
   for indexW:= 0 to Pred(FWidth) do
   begin
